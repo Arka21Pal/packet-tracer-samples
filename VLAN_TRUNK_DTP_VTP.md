@@ -235,6 +235,8 @@ S1#show vtp counters
 S1#show vtp password
 ```
 
+To see this in action, simply configure extra VLANs on the server switch.
+
 The only difference between a transparent machine and a client machine, is that VLANs will propagate to the client machine, while the transparent machine will not participate in VLAN propagation.\
 This is from [Cisco's website](https://www.cisco.com/c/en/us/support/docs/lan-switching/vtp/10558-21.html#:~:text=VTP%20server%20is%20the%20default,do%20not%20participate%20in%20VTP.)
 
