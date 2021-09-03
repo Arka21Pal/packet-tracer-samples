@@ -10,8 +10,8 @@
 - [VTP](#VTP:)
     - [Configuring the server](#VTP-server:)
     - [Configuring the client](#VTP-client:)
-    - [Staying transparent:](#Staying-transparent:)
-    - [For reference and checking configuration:](#For-reference-and-checking-configuration:)
+    - [Staying transparent](#Staying-transparent:)
+    - [For reference and checking configuration](#For-reference-and-checking-configuration:)
 - [Troubleshooting](#Troubleshooting:)
 - [A few resources](#A-few-resources:)
 
