@@ -14,3 +14,5 @@ That's why you need `STP`, because it will take care of the redundant links and 
 - https://www.cisco.com/c/en/us/support/docs/smb/switches/cisco-small-business-300-series-managed-switches/smb5760-configure-stp-settings-on-a-switch-through-the-cli.html
 - https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-0/addr_serv/command/reference/ir40asrbook_chapter2.html
 - https://community.cisco.com/t5/switching/show-arp-vs-show-mac-address-table/td-p/1584636
+- https://www.omnisecu.com/cisco-certified-network-associate-ccna/important-spanning-tree-protocol-stp-timers.php
+- https://www.ccexpert.us/routing-switching/portfast-uplinkfast-and-backbonefast.html
