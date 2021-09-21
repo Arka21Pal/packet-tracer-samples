@@ -30,30 +30,6 @@ Also note, that situations which require any of STP or its derivatives, usually 
 
 <br>
 
-# This is a great redention of STP in a network:
-
-<div class="thumbinner" style="width:608px;max-width:608px">
-  <div class="trow">
-    <div class="tsingle" style="width:302px;max-width:302px">
-      <div class="thumbimage">
-        <a href="/wiki/File:Spanning_tree_protocol_at_work_5.svg" class="image">
-          <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Spanning_tree_protocol_at_work_5.svg/300px-Spanning_tree_protocol_at_work_5.svg.png" decoding="async" width="300" height="300" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Spanning_tree_protocol_at_work_5.svg/450px-Spanning_tree_protocol_at_work_5.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Spanning_tree_protocol_at_work_5.svg/600px-Spanning_tree_protocol_at_work_5.svg.png 2x" data-file-width="591" data-file-height="591">
-        </a>
-      </div>
-      <div class="thumbcaption">Switches with Spanning Tree Protocol implementation in a local area network (LAN). One switch is the STP <i>root bridge</i>. All switch ports that connect a link between two switches are either a <i>root port</i> (RP), a <i>designated port</i> (DP), or a <i>blocked port</i> (BP).
-      </div>
-    </div>
-    <div class="tsingle" style="width:302px;max-width:302px">
-      <div class="thumbimage">
-        <a href="/wiki/File:Spanning_tree_protocol_at_work_6.svg" class="image">
-          <img alt="After link failure the spanning tree algorithm computes and spans new least-cost tree." src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Spanning_tree_protocol_at_work_6.svg/300px-Spanning_tree_protocol_at_work_6.svg.png" decoding="async" width="300" height="300" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Spanning_tree_protocol_at_work_6.svg/450px-Spanning_tree_protocol_at_work_6.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Spanning_tree_protocol_at_work_6.svg/600px-Spanning_tree_protocol_at_work_6.svg.png 2x" data-file-width="591" data-file-height="591">
-        </a>
-      </div>
-      <div class="thumbcaption">After link failure the spanning tree algorithm computes and spans new least-cost tree.</div></div></div><div class="trow" style="display:flex"><div class="thumbcaption">Switches with Spanning Tree Protocol implementation in a local area network (LAN)
-  </div>
-  </div>
-</div>
-
 The aim of STP is to figure out the best route from a number of redundant links, and only pass packets in that best. Btw, the best route is measured by the total path cost of the combinations of paths to the root bridge. This preferred link is used for all Ethernet frames unless it fails, in which case a non-preferred redundant link is enabled. When implemented in a network, STP designates one layer-2 switch as root bridge. All switches then select their best connection towards the root bridge for forwarding and block other redundant links. All switches constantly communicate with their neighbors in the LAN using Bridge Protocol Data Units (BPDUs).
 
 <table class="wikitable floatright">
