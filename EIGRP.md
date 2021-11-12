@@ -26,7 +26,10 @@ router(config-router)# end
 - `TLV` field contains `EIGRP` parameters, IP internal and external routes.
 - EIGRP for IPv6 is encapsulated with a multicast address (FF02::A) and same code (88)
 - To change the bandwidth of an interface: `bandwidth <kilobits-bandwidth-value>`. This can change EIGRP metrics.
-
+- Configure `router id`:
+    - `router id <ipv4-address>`
+    - Highest loopback address
+    - Highest active IP address of router
 
 ## Resources
 - [EIGRP Configuration With Packet Tracer](https://ipcisco.com/lesson/eigrp-configuration-with-packet-tracer-ccnp/)
