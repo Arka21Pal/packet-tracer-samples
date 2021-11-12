@@ -4,8 +4,8 @@
 
 ```
 router(config)# router eigrp <autonomous-system-number>
-router(config-router)# network <network>
-router(config-router)# network <network>
+router(config-router)# network <network> <subnet-mask or wildcard bits>
+router(config-router)# network <network> <subnet-mask or wildcard bits>
 router(config-router)# passive-interface <interface-type> <interface-number>
 router(config-router)# no auto-summary
 router(config-router)# end
@@ -14,8 +14,8 @@ router(config-router)# end
 ## Specific example
 ```
 router(config)# router eigrp 100
-router(config-router)# network 10.0.0.0
-router(config-router)# network 20.0.0.0
+router(config-router)# network 10.0.0.0 255.0.0.0
+router(config-router)# network 20.0.0.0 255.0.0.0
 router(config-router)# passive-interface G0/0/1
 router(config-router)# no auto-summary
 router(config-router)# end
