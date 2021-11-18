@@ -21,6 +21,17 @@ router(config-router)# no auto-summary
 router(config-router)# end
 ```
 
+## Edit: `IPv6` configuration
+- Display the routing table for `IPv6`.
+- Configure a directly connected `IPv6` default route.
+- Configure the EIGRP routing process to propagate the default route.
+```
+router# show ipv6 route
+router(config)# ipv6 route ::/0 serial 0/1/0
+router(config)# ipv6 router eigrp 1
+router(config-rtr)# redistribute static
+```
+
 ### Tid-bits:
 - The queue count is a measure of the congestion in an EIGRP network (the number of packets waiting for transmission)
 - signified by protocol 88 in the IP header.
