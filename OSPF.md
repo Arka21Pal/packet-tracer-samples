@@ -4,7 +4,7 @@
 Router(config)#interface Loopback <loopback_id>
 Router(config-if)#ip address <ip_address> <network_mask>
 Router(config-if)#exit
-Router(config)#router ospf 10
+Router(config)#router ospf <process-id>
 Router(config-router)#network <IP range> <wildcard mask> <area area_id>
 Router(config-router)#passive-interface <interface_name_id>
 Router(config-router)#router-id <desired router_id>
@@ -16,10 +16,10 @@ Router#show ip protocols
 ```
 
 ## Modifications:
-- Configuring individual interface with specific process_id and area.
+- Configuring individual interface with specific `process-id` and `area`.
     ```
     Router(config)#interface [interface-type interface-number]
-    Router(config-if)#ip ospf <process_id> area <area_id>
+    Router(config-if)#ip ospf <process-id> area <area_id>
     ```
     - Doing this will yield an output for individual `show ip ospf interface` commands. As an example - 
         ```
