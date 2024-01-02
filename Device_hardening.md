@@ -1,3 +1,6 @@
+# Tips:
+- `enable secret` and `enable password` achieve the same thing (set a password to enter privileged exec mode), however the former utilises encryption by default whilst the latter doesn't.
+
 # Commands for hardening a device running Cisco IOS.
 
 - ## Changing the hostname:
