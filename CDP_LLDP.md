@@ -17,7 +17,7 @@
         - Disable CDP for specific interface
             ```
             Switch(config)# interface gigabitethernet 0/0/1
-            Switch(config-if)# cdp enable
+            Switch(config-if)# no cdp enable
             ```
     - To verify the status of CDP and display information about CDP
         ```
